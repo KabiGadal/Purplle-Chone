@@ -45,10 +45,15 @@ function signin() {
   let input = document.getElementById('get_value').value;
  
   let details = JSON.parse(localStorage.getItem('details'));
-  console.log(details);
+  let ans = false;
 
-  for (let i = 0; i < details.length;i++) {
+  for (let i = 0; i < details.length; i++) {
+    console.log(details[i])
     if (input == details[i]) {
+      ans = true;
+    }
+  }
+    if(ans){
       setTimeout(function () {
         alert('Logged In Successfully');
       }, 1000)
@@ -56,7 +61,7 @@ function signin() {
       setTimeout(function () {
         document.getElementById('signin_id').style.display = 'none';
       }, 1000)
-     break;
+ 
     }
   
     else {
@@ -68,10 +73,10 @@ function signin() {
       }, 1000)
      
       let page = document.getElementById('credential').style.display = "none";
-     break;
+ 
     }
   }
-}
+
 
 function cross() {
   setTimeout(function () {
