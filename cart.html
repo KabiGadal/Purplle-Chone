@@ -1,0 +1,221 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/cart.css" /> -->
+    <!-- <link rel="javascript" type="text/js" href="cart.js" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <title>Your Shopping Bag |Purpple</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="home.css" />
+
+</head>
+
+<body>
+<div class='signin' id='signin_id1'>
+    <div class='close' onclick='cross1()'>+</div>
+    <h1>Login / Create Account</h1>
+    <input type='number' class='num' id='get_value1' placeholder="Enter your Mobile No." />
+    <span class='red'>*</span>
+    <button class='submit' onclick='signup_1()'>&#8594;</button>
+
+    <hr class='line'>
+    <p class='connect'>or connect with</p>
+    <div id='social'>
+        <div class='social_media'><img
+                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kP5RJhj2eymAGMmRTY-IXlI0pSolG36KtA&usqp=CAU'
+                class='social_img' />
+            <p class='social_p'>FACEBOOK</p>
+        </div>
+        <div class='social_media'><img
+                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg51uBKp7XgHa_6qu3-2nvm-5xsMujovbRZA&usqp=CAU'
+                class='social_img' />
+            <p class='social_p'>GOOGLE</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- navbar started  -->
+<div id='cont'>
+    <div id='searchbox'>
+        <input type='text' id='inp' placeholder='What are you looking for?' />
+        <div id='img'>
+            <img id='src'
+                src='https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/iconsearch.png' />
+        </div>
+    </div>
+    <div id='brand'>
+        <img id='brndimg' src='https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg' />
+    </div>
+    <div id='cart'>
+        <img class='signuphrt'
+            src='https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/iconwishlist.png' />
+        </span><img class='signuphrt' id='user'
+            src='https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/iconuser.png'
+            onclick='user()' />
+        <img class='signuphrt' src='https://www.shoppersstop.com/_ui/responsive/common/assets/images/iconaddtobag.png'
+            onclick='cart()' />
+    </div>
+</div>
+<div id='credential'>
+    <div class='log_in' onclick='log_in()'>SIGN IN</div>
+    <div class='log_in' onclick='sign_up()'>SIGN UP</div>
+
+</div>
+
+
+
+
+
+    <header class="home-header">
+        <div class="left-header">
+            <div class="stores-contact">
+                <!-- <a href="productdesc_1.html"><img src="./img/H1.png" /></a> -->
+            </div>
+            <div class="head-logo">
+                <!-- <a href="home.html"> -->
+                    <!-- <img src="	https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/sslogo.svg" /></a>  -->
+            </div>
+        </div>
+        <div class="right-header">
+            <!-- <img src="./img/H3.png" /> -->
+        </div>
+    </header>
+    <!-- Header close -->
+    <br /><br /><br />
+    <br /><br />
+    <br /><br /><br />
+
+    <main>
+        <div class="basket" id="bag">
+            <!-- here -->
+           
+            <div id="pc">
+                <!-- <input type="text" placeholder="Enter Pincode" id="ep" /> -->
+                <br />
+                <!-- <button id="checkbtn">CHECK</button> -->
+            </div>
+            <p id="sb">My Cart(<span id='count'>1</span>)</p>
+            <div class="basket-labels">
+                <ul>
+                    <li class="item item-heading">Item</li>
+                    <li class="price">Price</li>
+                    <li class="quantity">Quantity</li>
+                    <li class="subtotal">Subtotal</li>
+                </ul>
+            </div>
+            <!-- <div class="basket-product">
+          <div class="item">
+            <div class="product-image">
+              <img src=https://sslimages.shoppersstop.com/sys-master/images/hc1/h2b/14584881184798/206601943_9303.jpg_230Wx334H alt="Placholder Image 2" class="product-frame">
+            </div>
+            <div class="product-details">
+              <h1><strong><span class="item-quantity">4</span> ETHNIX </strong> Mens Mao Collar Slub Kurta Chu...</h1>
+            
+            </div>
+          </div>
+          <div class="price">2495</div>
+          <div class="quantity">
+            <input type="number" value="4" min="1" class="quantity-field">
+          </div>
+          <div class="subtotal">2495</div>
+          <div class="remove">
+            <button>Remove</button>
+          </div>
+        </div>
+        <div class="basket-product">
+          <div class="item">
+            <div class="product-image">
+              <img src="https://sslimages.shoppersstop.com/sys-master/images/h86/h99/15594685661214/A20METHKPS01NV_NAVY.jpg_230Wx334H" alt="Placholder Image 2" class="product-frame">
+            </div>
+            <div class="product-details">
+              <h1><strong><span class="item-quantity">1</span> STOP</strong> Mens Full Sleeves Kurta Pyjama ...</h1>
+             
+            </div>
+          </div>
+          <div class="price">1699</div>
+          <div class="quantity">
+            <input type="number" value="1" min="1" class="quantity-field">
+          </div>
+          <div class="subtotal">1699</div>
+          <div class="remove">
+            <button>Remove</button>
+          </div>
+        </div> -->
+        </div>
+        <aside>
+            <div class="summary">
+                <div class="summary-total-items">ORDER SUMMERY</div>
+                <br />
+                <div class="basket-module">
+                    <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field"
+                        placeholder="Enter promo/coupon code" />
+                    <button class="promo-code-cta">Apply</button>
+                </div>
+                <div class="summary-subtotal">
+                    <div class="subtotal-title">Subtotal</div>
+                    <div class="subtotal-value final-value" id="basket-subtotal">
+                        4194
+                    </div>
+                    <div class="subtotal-title">Gift Packaging</div>
+                    <div class="subtotal-value final-value" >Free</div>
+                    <div class="summary-subtotal">
+                        <div class="subtotal-title">Delivery Charges</div>
+                        <div class="subtotal-value final-value" id="basket-subtotal">
+                            100
+                        </div>
+                        <div class="summary-subtotal">
+                            <div class="summary-promo hide">
+                                <div class="promo-title">MASAI</div>
+                                <div class="promo-value final-value" id="basket-promo"></div>
+                            </div>
+
+                            <div class="summary-total">
+                                <div class="total-title">Total</div>
+                                <div class="total-value final-value" id="basket-total">
+                                    4294
+                                </div>
+                            </div>
+                            <div class="summary-checkout">
+                                <button class="checkout-cta" onclick="openWin()">
+                                    PLACE ORDER
+                                </button>
+                            </div>
+                            <div>
+                                <p style="color: gray; font-size: 10">
+                                    No Delivery charges for Express Store Pickup.
+                                </p>
+                                <br />
+                                <p style="color: gray; font-size: 10">
+                                    Do you have a gift card or and electronic gift voucher? Use
+                                    it at the payment page.
+                                </p>
+                            </div>
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <!-- <div>
+    <input type="checkbox" id="cbx">
+    <label for="cbx">
+    I accept these Terms & Conditions for enrolling as a First Citizen First Connect Member.
+  </label>
+</div> -->
+    <!-- <div id="footerdiv">
+<img src="https://sslimages.shoppersstop.com/sys-master/images/hba/h99/8841824698398/shopping-bag-promo.jpg">
+</div> -->
+</body>
+
+</html>
+
+<script src="cart.js"></script>
