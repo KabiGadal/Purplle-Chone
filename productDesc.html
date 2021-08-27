@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Description</title>
+    <link rel='stylesheet' href='productDesc.css'>
+    <link rel='stylesheet' href='home.css'>
+
+</head>
+<body>
+<div class='signin' id='signin_id1'>
+    <div class='close' onclick='cross1()'>+</div>
+    <h1>Login / Create Account</h1>
+    <input type='number' class='num' id='get_value1' placeholder="Enter your Mobile No." />
+    <span class='red'>*</span>
+    <button class='submit' onclick='signup_1()'>&#8594;</button>
+
+    <hr class='line'>
+    <p class='connect'>or connect with</p>
+    <div id='social'>
+        <div class='social_media'><img
+                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kP5RJhj2eymAGMmRTY-IXlI0pSolG36KtA&usqp=CAU'
+                class='social_img' />
+            <p class='social_p'>FACEBOOK</p>
+        </div>
+        <div class='social_media'><img
+                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg51uBKp7XgHa_6qu3-2nvm-5xsMujovbRZA&usqp=CAU'
+                class='social_img' />
+            <p class='social_p'>GOOGLE</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- navbar started  -->
+<div id='cont'>
+    <div id='searchbox'>
+        <input type='text' id='inp' placeholder='What are you looking for?' />
+        <div id='img'>
+            <img id='src'
+                src='https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/iconsearch.png' />
+        </div>
+    </div>
+    <div id='brand'>
+        <img id='brndimg' src='https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg' />
+    </div>
+    <div id='cart'>
+        <img class='signuphrt'
+            src='https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/iconwishlist.png' />
+        </span><img class='signuphrt' id='user'
+            src='https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/iconuser.png'
+            onclick='user()' />
+        <img class='signuphrt' src='https://www.shoppersstop.com/_ui/responsive/common/assets/images/iconaddtobag.png'
+            onclick='cart()' />
+    </div>
+</div>
+<div id='credential'>
+    <div class='log_in' onclick='log_in()'>SIGN IN</div>
+    <div class='log_in' onclick='sign_up()'>SIGN UP</div>
+
+</div>
+<!-- Items Categories -->
+
+
+
+
+
+
+
+
+<!-- Product desc. started -->
+
+<!-- section-1 carousel-1 start-->
+<div id='flex'>
+<div class="section-1 c1-slider" id="slider-1">
+    <!-- radio buttons for navigation start-->
+    <input type="radio" name="c1-radio-btn" id="c1-radio1" />
+    <input type="radio" name="c1-radio-btn" id="c1-radio2" />
+    <input type="radio" name="c1-radio-btn" id="c1-radio3" />
+    <input type="radio" name="c1-radio-btn" id="c1-radio4" />
+    <input type="radio" name="c1-radio-btn" id="c1-radio5" />
+
+    <div class="c1-manual-navigation">
+        <label for="c1-radio1" class="c1-manual-btn"><img id="img_1"
+                src=""
+                alt="logo" alt="" /></label>
+        <label for="c1-radio2" class="c1-manual-btn"><img id="img_2"
+                src=""
+                alt="logo" alt="" /></label>
+        <label for="c1-radio3" class="c1-manual-btn"><img id="img_3"
+                src=""
+                alt="logo" alt="" /></label>
+        <label for="c1-radio4" class="c1-manual-btn"><img id="img_4"
+                src=""
+                alt="logo" alt="" /></label>
+        <label for="c1-radio5" class="c1-manual-btn"><img id="img_5"
+                src=""
+                alt="logo" alt="" /></label>
+    </div>
+    <!-- radio buttons for navigation end-->
+    <div class="slide-container">
+        <div class="c1-slides">
+            <div class="c1-slide first">
+                <img id="main_1"
+                    src=""
+                    alt="logo" class="dtweb" />
+            </div>
+            <div class="c1-slide">
+                <img id="main_2"
+                    src=""
+                    alt="logo" class="dtweb" />
+            </div>
+            <div class="c1-slide">
+                <img id="main_3"
+                    src=""
+                    alt="logo" class="dtweb" />
+            </div>
+            <div class="c1-slide">
+                <img id="main_4"
+                    src=""
+                    alt="logo" class="dtweb" />
+            </div>
+            <div class="c1-slide">
+                <img id="main_5"
+                    src=""
+                    alt="logo" class="dtweb" />
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="c1-slider_1">
+    </div>
+    </div>
+</div>
+    <button onclick="addToCart()" id="cartbtn"><p id="cart_p">ADD TO CART</p></button>
+    <div  id="cartbtn_save">
+        <p id="cart_p_save">SAVE</p>
+    </div>
+    <div><span id='saved_people'>12517 people saved</span></div>
+    <span id='loc'>Deliver To:</span>
+   <button class='border_line'> <img src='data:image/png;base64,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'
+        id='location' /></button>
+    <input type="text" placeholder="Enter Pincode" id="pincode_input">
+    <button id='btn'>Check Delivery</button>
+    <hr>
+</body>
+</html>
+<script src="productDesc.js"></script>
