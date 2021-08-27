@@ -1,0 +1,169 @@
+#prod{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+}
+h2{
+    margin-top:0px;
+}
+#sort{
+    padding-top:10px;
+    height:70px;
+    display:flex;
+    border:1px solid black;
+}
+.filt{
+    width: 25%;
+    height: 45px;
+    border-right: 1px solid grey;
+    text-align: center;
+    padding-top: 10px;
+    font-size: larger;
+    /* background: mintcream; */
+    color: grey;
+    cursor: pointer;
+    
+}
+.filt:hover{
+    border-bottom:1px solid hotpink;
+    color:hotpink;
+}
+#sortby{
+    /* margin-left: 0%; */
+    width: 163px;
+}
+.hidden_div{
+    display: none;
+    position: relative;
+    margin: 0;
+    width: 173px;
+    /* border: 1px solid black; */
+    height: 29px;
+    background: whitesmoke;
+    padding: 6px;
+}
+ 
+#brand:hover  .hidden_div{
+/* background-color: grey; */
+display:block;
+color:grey;
+}
+#brand .hidden_div:hover{
+color:hotpink;
+}
+.brand_class{
+     width: 100%;
+    /* border: 1px solid black; */
+    height: 36px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#range:hover  .hidden_div{
+/* background-color: grey; */
+display:block;
+color:grey;
+}
+#range .hidden_div:hover{
+color:hotpink;
+}
+.range_class{
+     width: 100%;
+    /* border: 1px solid black; */
+    height: 36px;
+    padding-top: 10px;
+        text-align: start;
+}
+
+.check{
+    width:21px;
+    height:20px;
+    margin-right:15px;
+}
+#ingre:hover  .hidden_div{
+/* background-color: grey; */
+display:block;
+color:grey;
+}
+#ingre .hidden_div:hover{
+color:hotpink;
+}
+.ingre_class{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 36px;
+    padding-top: 10px;
+    text-align: start;
+}
+#sortby:hover  .hidden_div{
+/* background-color: grey; */
+display:block;
+color:grey;
+}
+/* #ingre .hidden_div:hover{
+color:hotpink;
+} */
+.sort_class{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 36px;
+    padding-top: 10px;
+    text-align: start;
+}
+ #sortby .sort_class:hover{
+    color:hotpink;
+}
+#dist:hover  .hidden_div{
+/* background-color: grey; */
+display:block;
+color:grey;
+}
+.dist_class{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 36px;
+    padding-top: 10px;
+    text-align: start;
+}
+ #dist .dist_class:hover{
+    color:hotpink;
+}
+#allProduct{
+        margin-left: 39%;
+    margin-bottom: 48px;
+    margin-top:29px;
+    color: rgb(68, 66, 66);
+}
+#wash{
+    margin-left: 39%;
+    margin-bottom: 48px;
+    margin-top:29px;
+    /* color: rgb(68, 66, 66); */
+}
+
+#prod p{
+    color: grey;
+    margin-bottom: 0px;
+}
+
+#prod h3{
+     color: rgb(68, 66, 66);
+     margin-top:1%;
+}
+
+.rating{
+width: 65px;
+    height: 30px;
+    background: rgb(21, 153, 21);
+    font-weight: 100;
+    color: whitesmoke;
+    font-size: 16px;
+    border-radius: 7px;
+    margin-bottom: 17px;
+}
+
+
+
+
+
+
